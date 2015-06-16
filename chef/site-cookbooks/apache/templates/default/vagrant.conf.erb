@@ -1,0 +1,11 @@
+<VirtualHost *:80>
+    DocumentRoot /var/www/vagrant/fuelphp/public
+    <Directory /var/www/vagrant/fuelphp/public>
+        Options All
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+        EnableMMAP Off
+        EnableSendfile Off
+   </Directory>
+</VirtualHost>

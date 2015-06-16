@@ -1,0 +1,11 @@
+GRANT ALL ON <%= @db_dev %>.* TO '<%= @username %>'@'localhost' IDENTIFIED BY '<%= @password %>';
+GRANT ALL ON <%= @db_dev %>.* TO '<%= @username %>'@'%' IDENTIFIED BY '<%= @password %>';
+GRANT ALL ON <%= @db_stg %>.* TO '<%= @username %>'@'localhost' IDENTIFIED BY '<%= @password %>';
+GRANT ALL ON <%= @db_stg %>.* TO '<%= @username %>'@'%' IDENTIFIED BY '<%= @password %>';
+GRANT ALL ON <%= @db_prod %>.* TO '<%= @username %>'@'localhost' IDENTIFIED BY '<%= @password %>';
+GRANT ALL ON <%= @db_prod %>.* TO '<%= @username %>'@'%' IDENTIFIED BY '<%= @password %>';
+GRANT ALL ON <%= @db_test %>.* TO '<%= @username %>'@'localhost' IDENTIFIED BY '<%= @password %>';
+GRANT ALL ON <%= @db_test %>.* TO '<%= @username %>'@'%' IDENTIFIED BY '<%= @password %>';
+
+
+FLUSH PRIVILEGES;
