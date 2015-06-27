@@ -1,4 +1,6 @@
-# Laplace
+# Fuelphph_Centos6_Vagrant
+
+Vagrant + Centos6 で FuelPHP を使うテンプレート
 
 ## 初期設定
 
@@ -50,6 +52,8 @@ apache  => 2.2.15
         AllowOverride All
         Order allow,deny
         Allow from all
+        EnableMMAP Off
+        EnableSendfile Off
    </Directory>
 </VirtualHost>
 ```
