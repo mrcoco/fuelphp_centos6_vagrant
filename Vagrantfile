@@ -16,7 +16,7 @@ Vagrant.configure(2) do |config|
       recipe[localedef]
       recipe[remi]
       recipe[apache]
-      recipe[apache::laplace]
+      recipe[apache::vagrant]
       recipe[php]
       recipe[mysql]
       recipe[mysql::createdb]
